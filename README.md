@@ -2,6 +2,8 @@
 
 This a basic example of CLI implementation for a [Tic Tac Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) game in Java.
 
+![Tic Tac Toe](./tic_tac_toe.png)
+
 ## Used libraries
 
 - Java 11
