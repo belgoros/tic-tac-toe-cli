@@ -18,7 +18,7 @@ public class Cell {
             case CROSS:
                 System.out.print(" X ");
                 break;
-            case ZERO:
+            case NOUGHT:
                 System.out.print(" O ");
                 break;
             case EMPTY:
@@ -30,7 +30,6 @@ public class Cell {
     public Seed getContent() {
         return content;
     }
-
 
     public void setContent(Seed content) {
         this.content = content;

@@ -26,7 +26,7 @@ public class TicTacToe {
             } else if (currentState == GameState.DRAW) {
                 System.out.println("It's Draw! Bye!");
             }
-            currentPlayer = (currentPlayer == Seed.CROSS) ? Seed.ZERO : Seed.CROSS;
+            currentPlayer = (currentPlayer == Seed.CROSS) ? Seed.NOUGHT : Seed.CROSS;
         } while (currentState == GameState.PLAYING);
     }
 
