@@ -14,8 +14,10 @@ Run `mvn clean install` to install dependencies
 ## Run
 
 The game board is considered to be a 3 x 3 grid.
-Rows and columns are numbered as 1 to 3. 
-Every player must place three of their marks in a horizontal, vertical, or diagonal row.
+Rows and columns are numbered as 1 to 3.
+
+Every player must place three of their marks in a horizontal, vertical or diagonal row.
+
 The values should be entered as pair of 2 numbers separated with spaces, i.e. `1 1` to mark the cell in the first row and the first column.
 `3 3` for the 3d row in the last (third) column.
 
