@@ -6,6 +6,7 @@ This a basic example of CLI implementation for a [Tic Tac Toe](https://en.wikipe
 
 - Java 11
 - Maven
+- JUnit5
 
 ## Set up
 
@@ -23,3 +24,8 @@ The values should be entered as pair of 2 numbers separated with spaces, i.e. `1
 
 To start the game, just run the main class `TicTacToe` from your favorite IDE.
 In the opened console, follow the instructions to enter the values.
+
+## Tests
+
+[JUnit5](https://junit.org/junit5/) is used for testing.
+Run `mvn test`` all the tests should pass.
