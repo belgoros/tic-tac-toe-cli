@@ -1,5 +1,5 @@
 package com.sca;
 
 public enum GameState {
-    PLAYING, DRAW, CROSS_WINS, ZERO_WINS;
+    PLAYING, DRAW, CROSS_WINS, NOUGHT_WINS;
 }

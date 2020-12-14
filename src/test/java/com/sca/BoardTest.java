@@ -34,22 +34,15 @@ class BoardTest {
     }
 
     @Test
-    public void draftTest() {
-        List<Cell[]> rows = Arrays.asList(board.getCells());
-        rows.forEach(cell -> cell[1].setContent(Seed.CROSS));
-        rows.forEach(cell -> System.out.println(cell[1].getContent()));
-    }
-
-    @Test
-    void shouldBeFull() {
+    void shouldBeDraw() {
         fillTheBoard(board.getCells());
-        assertTrue(board.isFull());
+        assertTrue(board.isDraw());
     }
 
     @Test
-    void shouldNotBeFull() {
+    void shouldNotBeDraw() {
         emptyBoard(board.getCells());
-        assertFalse(board.isFull());
+        assertFalse(board.isDraw());
     }
 
     @Test

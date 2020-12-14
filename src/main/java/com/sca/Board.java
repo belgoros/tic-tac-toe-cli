@@ -27,7 +27,7 @@ public class Board {
     /**
      * Returns true if it is a draw (i.e., no more EMPTY cell)
      */
-    public boolean isFull() {
+    public boolean isDraw() {
         for (int row = 0; row < ROWS; ++row) {
             for (int col = 0; col < COLS; ++col) {
                 if (cells[row][col].getContent() == Seed.EMPTY) {
@@ -42,37 +42,37 @@ public class Board {
      * Returns true if the player has won after placing at
      * (currentRow, currentCol)
      */
-    public boolean hasWon(Seed theSeed) {
-        return threeInTheRow(theSeed)
-                || threeInTheColumn(theSeed)
-                || threeInTheDiagonal(theSeed)
-                || threeInTheOppositeDiagonal(theSeed);
+    public boolean hasWon(Seed seed) {
+        return threeInTheRow(seed)
+                || threeInTheColumn(seed)
+                || threeInTheDiagonal(seed)
+                || threeInTheOppositeDiagonal(seed);
     }
 
-    private boolean threeInTheColumn(Seed _seed) {
-        return cells[0][currentCol].getContent() == _seed
-                && cells[1][currentCol].getContent() == _seed
-                && cells[2][currentCol].getContent() == _seed;
+    private boolean threeInTheColumn(Seed seed) {
+        return cells[0][currentCol].getContent() == seed
+                && cells[1][currentCol].getContent() == seed
+                && cells[2][currentCol].getContent() == seed;
     }
 
-    private boolean threeInTheRow(Seed _seed) {
-        return cells[currentRow][0].getContent() == _seed
-                && cells[currentRow][1].getContent() == _seed
-                && cells[currentRow][2].getContent() == _seed;
+    private boolean threeInTheRow(Seed seed) {
+        return cells[currentRow][0].getContent() == seed
+                && cells[currentRow][1].getContent() == seed
+                && cells[currentRow][2].getContent() == seed;
     }
 
-    private boolean threeInTheDiagonal(Seed _seed) {
+    private boolean threeInTheDiagonal(Seed seed) {
         return currentRow == currentCol
-                && cells[0][0].getContent() == _seed
-                && cells[1][1].getContent() == _seed
-                && cells[2][2].getContent() == _seed;
+                && cells[0][0].getContent() == seed
+                && cells[1][1].getContent() == seed
+                && cells[2][2].getContent() == seed;
     }
 
-    private boolean threeInTheOppositeDiagonal(Seed _seed) {
+    private boolean threeInTheOppositeDiagonal(Seed seed) {
         return currentRow + currentCol == 2
-                && cells[0][2].getContent() == _seed
-                && cells[1][1].getContent() == _seed
-                && cells[2][0].getContent() == _seed;
+                && cells[0][2].getContent() == seed
+                && cells[1][1].getContent() == seed
+                && cells[2][0].getContent() == seed;
     }
 
     /**
